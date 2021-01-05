@@ -1,13 +1,13 @@
 # WinScripts
 Powershell Scripts references for "Debloat Windows 10"
 
-https://christitus.com/debloat-windows-10-2020/
+(ref. from https://christitus.com/debloat-windows-10-2020/)
 
 script for powershell
 ```
 iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JJ8R4'))
 ```
-alternative from https://github.com/Sycnex/Windows10Debloater
+(ref from https://github.com/Sycnex/Windows10Debloater)
 ```
 iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/debloat'))
 ```
