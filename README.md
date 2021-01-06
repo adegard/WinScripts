@@ -25,3 +25,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 ```
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/W4RH4WK/Debloat-Windows-10/master/scripts/disable-services.ps1'))
 ```
+clean Windows files
+```
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/W4RH4WK/Debloat-Windows-10/master/scripts/disable-services.ps1'))
+```
