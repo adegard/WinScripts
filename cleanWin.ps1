@@ -4,6 +4,8 @@ based modifyed of the followings
 https://gallery.technet.microsoft.com/scriptcenter/Powershell-script-to-12de6135
  https://teckangaroo.com/clean-up-unwanted-files-in-pc/
 
+by adegard, 2021
+https://github.com/adegard/WinScripts/
  
 #> 
 ##################################################################################   
@@ -80,9 +82,9 @@ https://gallery.technet.microsoft.com/scriptcenter/Powershell-script-to-12de6135
         $temp2 = $temp.Value    
         $WinTemp = "$env:SystemDrive\Windows\Temp\*"      
         $CBS="$env:SystemDrive\Windows\Logs\CBS\"  
-        $swtools="$env:SystemDrive\swtools\*" 
-        $drivers="$env:SystemDrive\drivers\*" 
-        $swsetup="$env:SystemDrive\swsetup\*" 
+       #    $swtools="$env:SystemDrive\swtools\*" 
+      #     $drivers="$env:SystemDrive\drivers\*" 
+     #      $swsetup="$env:SystemDrive\swsetup\*" 
      #   $downloads="$env:SystemDrive\users\administrator\downloads\*" 
         $Prefetch="$env:SystemDrive\Windows\Prefetch\*" 
         $DowloadeUpdate="$env:SystemDrive\Windows\SoftwareDistribution\Download\*" 
@@ -92,7 +94,7 @@ https://gallery.technet.microsoft.com/scriptcenter/Powershell-script-to-12de6135
      # Remove temp files located in "C:\Users\USERNAME\AppData\Local\Temp"    
         [double]$a=before($temp2) 
         msg($temp2) 
-        Remove-Item -Recurse  "$temp2\*" -Force -Verbose  
+      #     Remove-Item -Recurse  "$temp2\*" -Force -Verbose  
         [double]$b=post($temp2)  
  
         $total=$a-$b 
