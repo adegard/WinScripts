@@ -29,3 +29,4 @@ clean Windows files
 ```
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/adegard/WinScripts/main/cleanWin.ps1'))
 ```
+(use windows scheduler for the last  https://blog.netwrix.com/2018/07/03/how-to-automate-powershell-scripts-with-task-scheduler/)
