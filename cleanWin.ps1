@@ -1,26 +1,9 @@
 ##################################################################################   
 <# 
- https://gallery.technet.microsoft.com/scriptcenter/Powershell-script-to-12de6135
-This script is created to automate the cleanup activity before sysprep and capturing started. Doing so will benefit ti reduce the size of  
-.WIM file. 
- 
-This script will perform the following 
-1. Clear windows temp and user temp folder 
-2. Empty recycle bin 
-3. Disk Cleanup 
-4. Clear CBS cabinet log files 
-5. Clear downloaded patches 
-6. Clear downloaded driver 
-7. Clean download folder 
- 
-Note: 
- 
-1. Run the script with Administrative access. 
-2. Put # chanracter before delete() function if you want to skip any folder. 
-3. Diskcleanup utility will prompt to select options available. Select the required options before 30 sec. 
-4. To add any new folder , need to declare the folder and call delete function with that folder variable 
- 
-contact: SHISHIR KUSHAWAHA (srktcet@gmail.com) 
+based modifyed of the followings
+https://gallery.technet.microsoft.com/scriptcenter/Powershell-script-to-12de6135
+ https://teckangaroo.com/clean-up-unwanted-files-in-pc/
+
  
 #> 
 ##################################################################################   
@@ -117,15 +100,15 @@ contact: SHISHIR KUSHAWAHA (srktcet@gmail.com)
  
      
     # Remove content of folder created during installation of driver     
-        delete($swtools) 
+       #   delete($swtools) 
      
  
     # Remove content of folder created during installation of Lenovo driver     
-        delete($drivers) 
+        #  delete($drivers) 
      
  
     # Remove content of folder created during installation of HP driver     
-        delete($swsetup) 
+     #     delete($swsetup) 
  
     # Remove content of download folder of administrator account     
         delete($downloads)    
@@ -134,6 +117,7 @@ contact: SHISHIR KUSHAWAHA (srktcet@gmail.com)
             write-Host "Emptying Recycle Bin." -ForegroundColor Cyan     
         $Recyclebin.items() | %{ remove-item $_.path -Recurse -verbose -Confirm:$false}    
  
+ (New-Object -ComObject Shell.Application).Namespace(0xA).items() | %{ rm $_.path -Recurse -Confirm:$false}
  
     # Remove Windows Temp Directory  
         delete($WinTemp) 
@@ -153,11 +137,7 @@ contact: SHISHIR KUSHAWAHA (srktcet@gmail.com)
      
  
     #6# Running Disk Clean up Tool     
-        write-Host "starting Windows disk Clean up Tool" -ForegroundColor Cyan    
-        cleanmgr.exe /SAGESET:50 
-        sleep 30 
-        cleanmgr.exe /SAGERUN:50   
-   
+cleanmgr /sagerun:1 | out-Null
         write-Host "**Clean Up completed**" 
 ##End of execution## 
 ##### End of the Script ##### ad   
