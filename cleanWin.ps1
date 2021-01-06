@@ -83,7 +83,7 @@ https://gallery.technet.microsoft.com/scriptcenter/Powershell-script-to-12de6135
         $swtools="$env:SystemDrive\swtools\*" 
         $drivers="$env:SystemDrive\drivers\*" 
         $swsetup="$env:SystemDrive\swsetup\*" 
-        $downloads="$env:SystemDrive\users\administrator\downloads\*" 
+     #   $downloads="$env:SystemDrive\users\administrator\downloads\*" 
         $Prefetch="$env:SystemDrive\Windows\Prefetch\*" 
         $DowloadeUpdate="$env:SystemDrive\Windows\SoftwareDistribution\Download\*" 
 ##End of variable Declartion.## 
@@ -111,7 +111,7 @@ https://gallery.technet.microsoft.com/scriptcenter/Powershell-script-to-12de6135
      #     delete($swsetup) 
  
     # Remove content of download folder of administrator account     
-        delete($downloads)    
+      #  delete($downloads)    
  
     # Empty Recycle Bin   
             write-Host "Emptying Recycle Bin." -ForegroundColor Cyan     
