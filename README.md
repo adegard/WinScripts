@@ -44,5 +44,5 @@ then:
 ```
 UpdateOS
 ```
-
+![](https://github.com/adegard/WinScripts/blob/main/updateOS.jpg)
 Schedule it 1 per month (as described above: program= powershell, comand= UpdateOS)
