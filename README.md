@@ -34,3 +34,15 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 (https://blog.netwrix.com/2018/07/03/how-to-automate-powershell-scripts-with-task-scheduler/)
 ![](https://github.com/adegard/WinScripts/blob/main/addonstartup.png?raw=true)
 
+# Update Windows 10
+Use [UpdateOS](https://www.powershellgallery.com/packages/UpdateOS/1.3) script:
+```
+Install-Script -Name UpdateOS
+```
+
+then:
+```
+UpdateOS
+```
+
+Schedule it 1 per month (as described above: program= powershell, comand= UpdateOS)
