@@ -51,3 +51,12 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 ```
 ![](https://github.com/adegard/WinScripts/blob/main/updateOS.jpg)
 Schedule it 1 per month (as described above: program= powershell, comand= UpdateOS)
+
+
+# Reinstall Windows App Store:
+
+It happens that you lost the apps store and want to recover it, so use the following command:
+```
+Get-AppxPackage -allusers Microsoft.WindowsStore | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
+
+```
