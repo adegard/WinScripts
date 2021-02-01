@@ -31,6 +31,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 ```
 
 # Schedule cleaning with Windows Sheduler
+Open Task Scheduler by pressing “Windows+R” and then typing “taskschd.msc” in the window that opens. Then create a new task like that:
 (https://blog.netwrix.com/2018/07/03/how-to-automate-powershell-scripts-with-task-scheduler/)
 ![](https://github.com/adegard/WinScripts/blob/main/addonstartup.png?raw=true)
 
