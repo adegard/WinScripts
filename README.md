@@ -29,6 +29,15 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 ```
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/adegard/WinScripts/main/cleanWin.ps1'))
 ```
+# List of installed softwares
+```
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/adegard/WinScripts/main/ReadInstalledSoftwares.ps1'))
+```
+# Finding hidden programs
+```
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/adegard/WinScripts/main/FindHiddenPrograms.ps1))
+```
+
 
 # Schedule cleaning with Windows Sheduler
 Open Task Scheduler by pressing “Windows+R” and then typing “taskschd.msc” in the window that opens. Then create a new task like that:
