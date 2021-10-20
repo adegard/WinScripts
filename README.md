@@ -30,8 +30,13 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/W4RH4WK/Debloat-Windows-10/master/scripts/disable-services.ps1'))
 ```
 # Clean Windows files
+Windows tool
 ```
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/adegard/WinScripts/main/cleanWin.ps1'))
+```
+(ref from https://github.com/larspassic/CleanUp-Temp.ps1 temp folder cleaner)
+```
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/larspassic/CleanUp-Temp.ps1/main/CleanUp-Temp.ps1'))
 ```
 # List of installed softwares
 ```
