@@ -1,5 +1,8 @@
 # Windows Powershell Usefull Scripts
 Collection of best Powershell Scripts references for "Debloat Windows 10", file cleaning, privacy and performance optimisation on Windows 10.
+Just copy each command in your powershell cli and press enter, it will download and execute each script.
+
+***Before launching any script, please check reference code***
 
 # Debloat Windows 10
 (ref. from https://christitus.com/debloat-windows-10-2020/)
