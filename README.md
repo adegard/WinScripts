@@ -11,6 +11,10 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JJ8R4'))
 ```
 iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/debloat'))
 ```
+(ref from https://github.com/gordonbay/Windows-On-Reins)
+```
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/gordonbay/Windows-On-Reins/master/wor.ps1'))
+```
 # Other optimizations
 
 ......optimize-user-interface.ps1.....
