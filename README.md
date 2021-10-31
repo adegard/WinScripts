@@ -20,6 +20,8 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 ```
 # Other optimizations
 
+https://github.com/FrostFyre1337/Windows-Performance-Tweaks
+
 ......optimize-user-interface.ps1.....
 ```
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/W4RH4WK/Debloat-Windows-10/master/scripts/optimize-user-interface.ps1'))
