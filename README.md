@@ -21,6 +21,7 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercon
 # Other optimizations
 
 https://github.com/FrostFyre1337/Windows-Performance-Tweaks
+https://github.com/Shoyayeb/makeWindowsLighter
 
 ......optimize-user-interface.ps1.....
 ```
