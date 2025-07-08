@@ -5,11 +5,7 @@ Just copy each command in your powershell cli and press enter, it will download 
 ***Before launching any script, please check reference code***
 
 # Debloat Windows 10
-(ref. from https://christitus.com/debloat-windows-10-2020/)
 
-```
-iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/JJ8R4'))
-```
 (ref from https://github.com/Sycnex/Windows10Debloater)
 ```
 iex ((New-Object System.Net.WebClient).DownloadString('https://git.io/debloat'))
