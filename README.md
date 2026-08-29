@@ -76,3 +76,7 @@ It happens that you lost the apps store and want to recover it, so use the follo
 Get-AppxPackage -allusers Microsoft.WindowsStore | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
 
 ```
+
+---
+
+For an overview of all my other projects, see https://adegard.github.io/blog/
